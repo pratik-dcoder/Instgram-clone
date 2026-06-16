@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+.container {
+    width: 350px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.post {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.post img {
+    width: 100%;
+}
