@@ -1,23 +1,150 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #fafafa;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
-.container {
-    width: 350px;
-    margin: 20px auto;
+body{
+    background:#fafafa;
 }
 
-h1 {
-    text-align: center;
+/* Navbar */
+.navbar{
+    background:#fff;
+    border-bottom:1px solid #dbdbdb;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:sticky;
+    top:0;
 }
 
-.post {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 10px;
+.logo{
+    font-size:28px;
+    font-weight:bold;
 }
 
-.post img {
-    width: 100%;
+/* Stories */
+.stories{
+    width:600px;
+    margin:20px auto;
+    background:#fff;
+    border:1px solid #dbdbdb;
+    padding:15px;
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+}
+
+.story{
+    text-align:center;
+}
+
+.story img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    padding:2px;
+    border:3px solid #e1306c;
+}
+
+.story p{
+    font-size:12px;
+    margin-top:5px;
+}
+
+/* Post Card */
+.post{
+    width:600px;
+    margin:20px auto;
+    background:#fff;
+    border:1px solid #dbdbdb;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.post-header{
+    display:flex;
+    align-items:center;
+    padding:12px;
+}
+
+.post-header img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.username{
+    font-weight:600;
+}
+
+.post-image{
+    width:100%;
+    display:block;
+}
+
+.actions{
+    padding:12px;
+}
+
+.actions i{
+    font-size:26px;
+    margin-right:15px;
+    cursor:pointer;
+}
+
+.likes{
+    font-weight:600;
+    margin-top:8px;
+}
+
+.caption{
+    margin-top:8px;
+    line-height:1.4;
+}
+
+.comments{
+    color:gray;
+    margin-top:8px;
+}
+
+.comment-box{
+    border-top:1px solid #efefef;
+    display:flex;
+}
+
+.comment-box input{
+    flex:1;
+    border:none;
+    padding:15px;
+    outline:none;
+}
+
+.comment-box button{
+    border:none;
+    background:none;
+    color:#0095f6;
+    font-weight:bold;
+    padding:0 15px;
+    cursor:pointer;
+}
+
+/* Responsive */
+@media(max-width:700px){
+
+    .stories,
+    .post{
+        width:100%;
+        margin:10px 0;
+        border-left:none;
+        border-right:none;
+    }
+
+    .navbar{
+        width:100%;
+    }
 }
