@@ -1,150 +1,630 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+
+/* Premium Instagram Clone CSS */
+:root{
+  --bg:#fafafa;
+  --card:#ffffff;
+  --text:#111;
+  --border:#dbdbdb;
+  --accent:#e1306c;
 }
-
-body{
-    background:#fafafa;
+body.dark{
+  --bg:#121212;
+  --card:#1e1e1e;
+  --text:#f5f5f5;
+  --border:#333;
 }
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Segoe UI,sans-serif}
+.navbar{height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:0}
+.sidebar{width:260px;position:fixed;left:0;top:0;height:100vh;background:var(--card);border-right:1px solid var(--border)}
+.feed{max-width:700px;margin:20px auto}
+.post{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:20px}
+.reels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.profile-header{display:flex;gap:30px;padding:30px}
+.follow-btn{padding:10px 18px;border-radius:8px;background:var(--accent);color:#fff;border:none}
 
-/* Navbar */
-.navbar{
-    background:#fff;
-    border-bottom:1px solid #dbdbdb;
-    height:60px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:sticky;
-    top:0;
-}
+.anim-1{transition:all .3s ease}
+.anim-1:hover{transform:translateY(-2px) scale(1.01)}
+.space-1{margin:1px;padding:1px}
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
-}
+.anim-2{transition:all .3s ease}
+.anim-2:hover{transform:translateY(-2px) scale(1.01)}
+.space-2{margin:2px;padding:2px}
 
-/* Stories */
-.stories{
-    width:600px;
-    margin:20px auto;
-    background:#fff;
-    border:1px solid #dbdbdb;
-    padding:15px;
-    display:flex;
-    gap:15px;
-    overflow-x:auto;
-}
+.anim-3{transition:all .3s ease}
+.anim-3:hover{transform:translateY(-2px) scale(1.01)}
+.space-3{margin:3px;padding:3px}
 
-.story{
-    text-align:center;
-}
+.anim-4{transition:all .3s ease}
+.anim-4:hover{transform:translateY(-2px) scale(1.01)}
+.space-4{margin:4px;padding:4px}
 
-.story img{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    padding:2px;
-    border:3px solid #e1306c;
-}
+.anim-5{transition:all .3s ease}
+.anim-5:hover{transform:translateY(-2px) scale(1.01)}
+.space-5{margin:5px;padding:5px}
 
-.story p{
-    font-size:12px;
-    margin-top:5px;
-}
+.anim-6{transition:all .3s ease}
+.anim-6:hover{transform:translateY(-2px) scale(1.01)}
+.space-6{margin:6px;padding:6px}
 
-/* Post Card */
-.post{
-    width:600px;
-    margin:20px auto;
-    background:#fff;
-    border:1px solid #dbdbdb;
-    border-radius:5px;
-    overflow:hidden;
-}
+.anim-7{transition:all .3s ease}
+.anim-7:hover{transform:translateY(-2px) scale(1.01)}
+.space-7{margin:7px;padding:7px}
 
-.post-header{
-    display:flex;
-    align-items:center;
-    padding:12px;
-}
+.anim-8{transition:all .3s ease}
+.anim-8:hover{transform:translateY(-2px) scale(1.01)}
+.space-8{margin:8px;padding:8px}
 
-.post-header img{
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    margin-right:10px;
-}
+.anim-9{transition:all .3s ease}
+.anim-9:hover{transform:translateY(-2px) scale(1.01)}
+.space-9{margin:9px;padding:9px}
 
-.username{
-    font-weight:600;
-}
+.anim-10{transition:all .3s ease}
+.anim-10:hover{transform:translateY(-2px) scale(1.01)}
+.space-10{margin:10px;padding:10px}
 
-.post-image{
-    width:100%;
-    display:block;
-}
+.anim-11{transition:all .3s ease}
+.anim-11:hover{transform:translateY(-2px) scale(1.01)}
+.space-11{margin:11px;padding:11px}
 
-.actions{
-    padding:12px;
-}
+.anim-12{transition:all .3s ease}
+.anim-12:hover{transform:translateY(-2px) scale(1.01)}
+.space-12{margin:12px;padding:12px}
 
-.actions i{
-    font-size:26px;
-    margin-right:15px;
-    cursor:pointer;
-}
+.anim-13{transition:all .3s ease}
+.anim-13:hover{transform:translateY(-2px) scale(1.01)}
+.space-13{margin:13px;padding:13px}
 
-.likes{
-    font-weight:600;
-    margin-top:8px;
-}
+.anim-14{transition:all .3s ease}
+.anim-14:hover{transform:translateY(-2px) scale(1.01)}
+.space-14{margin:14px;padding:14px}
 
-.caption{
-    margin-top:8px;
-    line-height:1.4;
-}
+.anim-15{transition:all .3s ease}
+.anim-15:hover{transform:translateY(-2px) scale(1.01)}
+.space-15{margin:15px;padding:0px}
 
-.comments{
-    color:gray;
-    margin-top:8px;
-}
+.anim-16{transition:all .3s ease}
+.anim-16:hover{transform:translateY(-2px) scale(1.01)}
+.space-16{margin:16px;padding:1px}
 
-.comment-box{
-    border-top:1px solid #efefef;
-    display:flex;
-}
+.anim-17{transition:all .3s ease}
+.anim-17:hover{transform:translateY(-2px) scale(1.01)}
+.space-17{margin:17px;padding:2px}
 
-.comment-box input{
-    flex:1;
-    border:none;
-    padding:15px;
-    outline:none;
-}
+.anim-18{transition:all .3s ease}
+.anim-18:hover{transform:translateY(-2px) scale(1.01)}
+.space-18{margin:18px;padding:3px}
 
-.comment-box button{
-    border:none;
-    background:none;
-    color:#0095f6;
-    font-weight:bold;
-    padding:0 15px;
-    cursor:pointer;
-}
+.anim-19{transition:all .3s ease}
+.anim-19:hover{transform:translateY(-2px) scale(1.01)}
+.space-19{margin:19px;padding:4px}
 
-/* Responsive */
-@media(max-width:700px){
+.anim-20{transition:all .3s ease}
+.anim-20:hover{transform:translateY(-2px) scale(1.01)}
+.space-20{margin:0px;padding:5px}
 
-    .stories,
-    .post{
-        width:100%;
-        margin:10px 0;
-        border-left:none;
-        border-right:none;
-    }
+.anim-21{transition:all .3s ease}
+.anim-21:hover{transform:translateY(-2px) scale(1.01)}
+.space-21{margin:1px;padding:6px}
 
-    .navbar{
-        width:100%;
-    }
-}
+.anim-22{transition:all .3s ease}
+.anim-22:hover{transform:translateY(-2px) scale(1.01)}
+.space-22{margin:2px;padding:7px}
+
+.anim-23{transition:all .3s ease}
+.anim-23:hover{transform:translateY(-2px) scale(1.01)}
+.space-23{margin:3px;padding:8px}
+
+.anim-24{transition:all .3s ease}
+.anim-24:hover{transform:translateY(-2px) scale(1.01)}
+.space-24{margin:4px;padding:9px}
+
+.anim-25{transition:all .3s ease}
+.anim-25:hover{transform:translateY(-2px) scale(1.01)}
+.space-25{margin:5px;padding:10px}
+
+.anim-26{transition:all .3s ease}
+.anim-26:hover{transform:translateY(-2px) scale(1.01)}
+.space-26{margin:6px;padding:11px}
+
+.anim-27{transition:all .3s ease}
+.anim-27:hover{transform:translateY(-2px) scale(1.01)}
+.space-27{margin:7px;padding:12px}
+
+.anim-28{transition:all .3s ease}
+.anim-28:hover{transform:translateY(-2px) scale(1.01)}
+.space-28{margin:8px;padding:13px}
+
+.anim-29{transition:all .3s ease}
+.anim-29:hover{transform:translateY(-2px) scale(1.01)}
+.space-29{margin:9px;padding:14px}
+
+.anim-30{transition:all .3s ease}
+.anim-30:hover{transform:translateY(-2px) scale(1.01)}
+.space-30{margin:10px;padding:0px}
+
+.anim-31{transition:all .3s ease}
+.anim-31:hover{transform:translateY(-2px) scale(1.01)}
+.space-31{margin:11px;padding:1px}
+
+.anim-32{transition:all .3s ease}
+.anim-32:hover{transform:translateY(-2px) scale(1.01)}
+.space-32{margin:12px;padding:2px}
+
+.anim-33{transition:all .3s ease}
+.anim-33:hover{transform:translateY(-2px) scale(1.01)}
+.space-33{margin:13px;padding:3px}
+
+.anim-34{transition:all .3s ease}
+.anim-34:hover{transform:translateY(-2px) scale(1.01)}
+.space-34{margin:14px;padding:4px}
+
+.anim-35{transition:all .3s ease}
+.anim-35:hover{transform:translateY(-2px) scale(1.01)}
+.space-35{margin:15px;padding:5px}
+
+.anim-36{transition:all .3s ease}
+.anim-36:hover{transform:translateY(-2px) scale(1.01)}
+.space-36{margin:16px;padding:6px}
+
+.anim-37{transition:all .3s ease}
+.anim-37:hover{transform:translateY(-2px) scale(1.01)}
+.space-37{margin:17px;padding:7px}
+
+.anim-38{transition:all .3s ease}
+.anim-38:hover{transform:translateY(-2px) scale(1.01)}
+.space-38{margin:18px;padding:8px}
+
+.anim-39{transition:all .3s ease}
+.anim-39:hover{transform:translateY(-2px) scale(1.01)}
+.space-39{margin:19px;padding:9px}
+
+.anim-40{transition:all .3s ease}
+.anim-40:hover{transform:translateY(-2px) scale(1.01)}
+.space-40{margin:0px;padding:10px}
+
+.anim-41{transition:all .3s ease}
+.anim-41:hover{transform:translateY(-2px) scale(1.01)}
+.space-41{margin:1px;padding:11px}
+
+.anim-42{transition:all .3s ease}
+.anim-42:hover{transform:translateY(-2px) scale(1.01)}
+.space-42{margin:2px;padding:12px}
+
+.anim-43{transition:all .3s ease}
+.anim-43:hover{transform:translateY(-2px) scale(1.01)}
+.space-43{margin:3px;padding:13px}
+
+.anim-44{transition:all .3s ease}
+.anim-44:hover{transform:translateY(-2px) scale(1.01)}
+.space-44{margin:4px;padding:14px}
+
+.anim-45{transition:all .3s ease}
+.anim-45:hover{transform:translateY(-2px) scale(1.01)}
+.space-45{margin:5px;padding:0px}
+
+.anim-46{transition:all .3s ease}
+.anim-46:hover{transform:translateY(-2px) scale(1.01)}
+.space-46{margin:6px;padding:1px}
+
+.anim-47{transition:all .3s ease}
+.anim-47:hover{transform:translateY(-2px) scale(1.01)}
+.space-47{margin:7px;padding:2px}
+
+.anim-48{transition:all .3s ease}
+.anim-48:hover{transform:translateY(-2px) scale(1.01)}
+.space-48{margin:8px;padding:3px}
+
+.anim-49{transition:all .3s ease}
+.anim-49:hover{transform:translateY(-2px) scale(1.01)}
+.space-49{margin:9px;padding:4px}
+
+.anim-50{transition:all .3s ease}
+.anim-50:hover{transform:translateY(-2px) scale(1.01)}
+.space-50{margin:10px;padding:5px}
+
+.anim-51{transition:all .3s ease}
+.anim-51:hover{transform:translateY(-2px) scale(1.01)}
+.space-51{margin:11px;padding:6px}
+
+.anim-52{transition:all .3s ease}
+.anim-52:hover{transform:translateY(-2px) scale(1.01)}
+.space-52{margin:12px;padding:7px}
+
+.anim-53{transition:all .3s ease}
+.anim-53:hover{transform:translateY(-2px) scale(1.01)}
+.space-53{margin:13px;padding:8px}
+
+.anim-54{transition:all .3s ease}
+.anim-54:hover{transform:translateY(-2px) scale(1.01)}
+.space-54{margin:14px;padding:9px}
+
+.anim-55{transition:all .3s ease}
+.anim-55:hover{transform:translateY(-2px) scale(1.01)}
+.space-55{margin:15px;padding:10px}
+
+.anim-56{transition:all .3s ease}
+.anim-56:hover{transform:translateY(-2px) scale(1.01)}
+.space-56{margin:16px;padding:11px}
+
+.anim-57{transition:all .3s ease}
+.anim-57:hover{transform:translateY(-2px) scale(1.01)}
+.space-57{margin:17px;padding:12px}
+
+.anim-58{transition:all .3s ease}
+.anim-58:hover{transform:translateY(-2px) scale(1.01)}
+.space-58{margin:18px;padding:13px}
+
+.anim-59{transition:all .3s ease}
+.anim-59:hover{transform:translateY(-2px) scale(1.01)}
+.space-59{margin:19px;padding:14px}
+
+.anim-60{transition:all .3s ease}
+.anim-60:hover{transform:translateY(-2px) scale(1.01)}
+.space-60{margin:0px;padding:0px}
+
+.anim-61{transition:all .3s ease}
+.anim-61:hover{transform:translateY(-2px) scale(1.01)}
+.space-61{margin:1px;padding:1px}
+
+.anim-62{transition:all .3s ease}
+.anim-62:hover{transform:translateY(-2px) scale(1.01)}
+.space-62{margin:2px;padding:2px}
+
+.anim-63{transition:all .3s ease}
+.anim-63:hover{transform:translateY(-2px) scale(1.01)}
+.space-63{margin:3px;padding:3px}
+
+.anim-64{transition:all .3s ease}
+.anim-64:hover{transform:translateY(-2px) scale(1.01)}
+.space-64{margin:4px;padding:4px}
+
+.anim-65{transition:all .3s ease}
+.anim-65:hover{transform:translateY(-2px) scale(1.01)}
+.space-65{margin:5px;padding:5px}
+
+.anim-66{transition:all .3s ease}
+.anim-66:hover{transform:translateY(-2px) scale(1.01)}
+.space-66{margin:6px;padding:6px}
+
+.anim-67{transition:all .3s ease}
+.anim-67:hover{transform:translateY(-2px) scale(1.01)}
+.space-67{margin:7px;padding:7px}
+
+.anim-68{transition:all .3s ease}
+.anim-68:hover{transform:translateY(-2px) scale(1.01)}
+.space-68{margin:8px;padding:8px}
+
+.anim-69{transition:all .3s ease}
+.anim-69:hover{transform:translateY(-2px) scale(1.01)}
+.space-69{margin:9px;padding:9px}
+
+.anim-70{transition:all .3s ease}
+.anim-70:hover{transform:translateY(-2px) scale(1.01)}
+.space-70{margin:10px;padding:10px}
+
+.anim-71{transition:all .3s ease}
+.anim-71:hover{transform:translateY(-2px) scale(1.01)}
+.space-71{margin:11px;padding:11px}
+
+.anim-72{transition:all .3s ease}
+.anim-72:hover{transform:translateY(-2px) scale(1.01)}
+.space-72{margin:12px;padding:12px}
+
+.anim-73{transition:all .3s ease}
+.anim-73:hover{transform:translateY(-2px) scale(1.01)}
+.space-73{margin:13px;padding:13px}
+
+.anim-74{transition:all .3s ease}
+.anim-74:hover{transform:translateY(-2px) scale(1.01)}
+.space-74{margin:14px;padding:14px}
+
+.anim-75{transition:all .3s ease}
+.anim-75:hover{transform:translateY(-2px) scale(1.01)}
+.space-75{margin:15px;padding:0px}
+
+.anim-76{transition:all .3s ease}
+.anim-76:hover{transform:translateY(-2px) scale(1.01)}
+.space-76{margin:16px;padding:1px}
+
+.anim-77{transition:all .3s ease}
+.anim-77:hover{transform:translateY(-2px) scale(1.01)}
+.space-77{margin:17px;padding:2px}
+
+.anim-78{transition:all .3s ease}
+.anim-78:hover{transform:translateY(-2px) scale(1.01)}
+.space-78{margin:18px;padding:3px}
+
+.anim-79{transition:all .3s ease}
+.anim-79:hover{transform:translateY(-2px) scale(1.01)}
+.space-79{margin:19px;padding:4px}
+
+.anim-80{transition:all .3s ease}
+.anim-80:hover{transform:translateY(-2px) scale(1.01)}
+.space-80{margin:0px;padding:5px}
+
+.anim-81{transition:all .3s ease}
+.anim-81:hover{transform:translateY(-2px) scale(1.01)}
+.space-81{margin:1px;padding:6px}
+
+.anim-82{transition:all .3s ease}
+.anim-82:hover{transform:translateY(-2px) scale(1.01)}
+.space-82{margin:2px;padding:7px}
+
+.anim-83{transition:all .3s ease}
+.anim-83:hover{transform:translateY(-2px) scale(1.01)}
+.space-83{margin:3px;padding:8px}
+
+.anim-84{transition:all .3s ease}
+.anim-84:hover{transform:translateY(-2px) scale(1.01)}
+.space-84{margin:4px;padding:9px}
+
+.anim-85{transition:all .3s ease}
+.anim-85:hover{transform:translateY(-2px) scale(1.01)}
+.space-85{margin:5px;padding:10px}
+
+.anim-86{transition:all .3s ease}
+.anim-86:hover{transform:translateY(-2px) scale(1.01)}
+.space-86{margin:6px;padding:11px}
+
+.anim-87{transition:all .3s ease}
+.anim-87:hover{transform:translateY(-2px) scale(1.01)}
+.space-87{margin:7px;padding:12px}
+
+.anim-88{transition:all .3s ease}
+.anim-88:hover{transform:translateY(-2px) scale(1.01)}
+.space-88{margin:8px;padding:13px}
+
+.anim-89{transition:all .3s ease}
+.anim-89:hover{transform:translateY(-2px) scale(1.01)}
+.space-89{margin:9px;padding:14px}
+
+.anim-90{transition:all .3s ease}
+.anim-90:hover{transform:translateY(-2px) scale(1.01)}
+.space-90{margin:10px;padding:0px}
+
+.anim-91{transition:all .3s ease}
+.anim-91:hover{transform:translateY(-2px) scale(1.01)}
+.space-91{margin:11px;padding:1px}
+
+.anim-92{transition:all .3s ease}
+.anim-92:hover{transform:translateY(-2px) scale(1.01)}
+.space-92{margin:12px;padding:2px}
+
+.anim-93{transition:all .3s ease}
+.anim-93:hover{transform:translateY(-2px) scale(1.01)}
+.space-93{margin:13px;padding:3px}
+
+.anim-94{transition:all .3s ease}
+.anim-94:hover{transform:translateY(-2px) scale(1.01)}
+.space-94{margin:14px;padding:4px}
+
+.anim-95{transition:all .3s ease}
+.anim-95:hover{transform:translateY(-2px) scale(1.01)}
+.space-95{margin:15px;padding:5px}
+
+.anim-96{transition:all .3s ease}
+.anim-96:hover{transform:translateY(-2px) scale(1.01)}
+.space-96{margin:16px;padding:6px}
+
+.anim-97{transition:all .3s ease}
+.anim-97:hover{transform:translateY(-2px) scale(1.01)}
+.space-97{margin:17px;padding:7px}
+
+.anim-98{transition:all .3s ease}
+.anim-98:hover{transform:translateY(-2px) scale(1.01)}
+.space-98{margin:18px;padding:8px}
+
+.anim-99{transition:all .3s ease}
+.anim-99:hover{transform:translateY(-2px) scale(1.01)}
+.space-99{margin:19px;padding:9px}
+
+.anim-100{transition:all .3s ease}
+.anim-100:hover{transform:translateY(-2px) scale(1.01)}
+.space-100{margin:0px;padding:10px}
+
+.anim-101{transition:all .3s ease}
+.anim-101:hover{transform:translateY(-2px) scale(1.01)}
+.space-101{margin:1px;padding:11px}
+
+.anim-102{transition:all .3s ease}
+.anim-102:hover{transform:translateY(-2px) scale(1.01)}
+.space-102{margin:2px;padding:12px}
+
+.anim-103{transition:all .3s ease}
+.anim-103:hover{transform:translateY(-2px) scale(1.01)}
+.space-103{margin:3px;padding:13px}
+
+.anim-104{transition:all .3s ease}
+.anim-104:hover{transform:translateY(-2px) scale(1.01)}
+.space-104{margin:4px;padding:14px}
+
+.anim-105{transition:all .3s ease}
+.anim-105:hover{transform:translateY(-2px) scale(1.01)}
+.space-105{margin:5px;padding:0px}
+
+.anim-106{transition:all .3s ease}
+.anim-106:hover{transform:translateY(-2px) scale(1.01)}
+.space-106{margin:6px;padding:1px}
+
+.anim-107{transition:all .3s ease}
+.anim-107:hover{transform:translateY(-2px) scale(1.01)}
+.space-107{margin:7px;padding:2px}
+
+.anim-108{transition:all .3s ease}
+.anim-108:hover{transform:translateY(-2px) scale(1.01)}
+.space-108{margin:8px;padding:3px}
+
+.anim-109{transition:all .3s ease}
+.anim-109:hover{transform:translateY(-2px) scale(1.01)}
+.space-109{margin:9px;padding:4px}
+
+.anim-110{transition:all .3s ease}
+.anim-110:hover{transform:translateY(-2px) scale(1.01)}
+.space-110{margin:10px;padding:5px}
+
+.anim-111{transition:all .3s ease}
+.anim-111:hover{transform:translateY(-2px) scale(1.01)}
+.space-111{margin:11px;padding:6px}
+
+.anim-112{transition:all .3s ease}
+.anim-112:hover{transform:translateY(-2px) scale(1.01)}
+.space-112{margin:12px;padding:7px}
+
+.anim-113{transition:all .3s ease}
+.anim-113:hover{transform:translateY(-2px) scale(1.01)}
+.space-113{margin:13px;padding:8px}
+
+.anim-114{transition:all .3s ease}
+.anim-114:hover{transform:translateY(-2px) scale(1.01)}
+.space-114{margin:14px;padding:9px}
+
+.anim-115{transition:all .3s ease}
+.anim-115:hover{transform:translateY(-2px) scale(1.01)}
+.space-115{margin:15px;padding:10px}
+
+.anim-116{transition:all .3s ease}
+.anim-116:hover{transform:translateY(-2px) scale(1.01)}
+.space-116{margin:16px;padding:11px}
+
+.anim-117{transition:all .3s ease}
+.anim-117:hover{transform:translateY(-2px) scale(1.01)}
+.space-117{margin:17px;padding:12px}
+
+.anim-118{transition:all .3s ease}
+.anim-118:hover{transform:translateY(-2px) scale(1.01)}
+.space-118{margin:18px;padding:13px}
+
+.anim-119{transition:all .3s ease}
+.anim-119:hover{transform:translateY(-2px) scale(1.01)}
+.space-119{margin:19px;padding:14px}
+
+.anim-120{transition:all .3s ease}
+.anim-120:hover{transform:translateY(-2px) scale(1.01)}
+.space-120{margin:0px;padding:0px}
+
+.anim-121{transition:all .3s ease}
+.anim-121:hover{transform:translateY(-2px) scale(1.01)}
+.space-121{margin:1px;padding:1px}
+
+.anim-122{transition:all .3s ease}
+.anim-122:hover{transform:translateY(-2px) scale(1.01)}
+.space-122{margin:2px;padding:2px}
+
+.anim-123{transition:all .3s ease}
+.anim-123:hover{transform:translateY(-2px) scale(1.01)}
+.space-123{margin:3px;padding:3px}
+
+.anim-124{transition:all .3s ease}
+.anim-124:hover{transform:translateY(-2px) scale(1.01)}
+.space-124{margin:4px;padding:4px}
+
+.anim-125{transition:all .3s ease}
+.anim-125:hover{transform:translateY(-2px) scale(1.01)}
+.space-125{margin:5px;padding:5px}
+
+.anim-126{transition:all .3s ease}
+.anim-126:hover{transform:translateY(-2px) scale(1.01)}
+.space-126{margin:6px;padding:6px}
+
+.anim-127{transition:all .3s ease}
+.anim-127:hover{transform:translateY(-2px) scale(1.01)}
+.space-127{margin:7px;padding:7px}
+
+.anim-128{transition:all .3s ease}
+.anim-128:hover{transform:translateY(-2px) scale(1.01)}
+.space-128{margin:8px;padding:8px}
+
+.anim-129{transition:all .3s ease}
+.anim-129:hover{transform:translateY(-2px) scale(1.01)}
+.space-129{margin:9px;padding:9px}
+
+.anim-130{transition:all .3s ease}
+.anim-130:hover{transform:translateY(-2px) scale(1.01)}
+.space-130{margin:10px;padding:10px}
+
+.anim-131{transition:all .3s ease}
+.anim-131:hover{transform:translateY(-2px) scale(1.01)}
+.space-131{margin:11px;padding:11px}
+
+.anim-132{transition:all .3s ease}
+.anim-132:hover{transform:translateY(-2px) scale(1.01)}
+.space-132{margin:12px;padding:12px}
+
+.anim-133{transition:all .3s ease}
+.anim-133:hover{transform:translateY(-2px) scale(1.01)}
+.space-133{margin:13px;padding:13px}
+
+.anim-134{transition:all .3s ease}
+.anim-134:hover{transform:translateY(-2px) scale(1.01)}
+.space-134{margin:14px;padding:14px}
+
+.anim-135{transition:all .3s ease}
+.anim-135:hover{transform:translateY(-2px) scale(1.01)}
+.space-135{margin:15px;padding:0px}
+
+.anim-136{transition:all .3s ease}
+.anim-136:hover{transform:translateY(-2px) scale(1.01)}
+.space-136{margin:16px;padding:1px}
+
+.anim-137{transition:all .3s ease}
+.anim-137:hover{transform:translateY(-2px) scale(1.01)}
+.space-137{margin:17px;padding:2px}
+
+.anim-138{transition:all .3s ease}
+.anim-138:hover{transform:translateY(-2px) scale(1.01)}
+.space-138{margin:18px;padding:3px}
+
+.anim-139{transition:all .3s ease}
+.anim-139:hover{transform:translateY(-2px) scale(1.01)}
+.space-139{margin:19px;padding:4px}
+
+.anim-140{transition:all .3s ease}
+.anim-140:hover{transform:translateY(-2px) scale(1.01)}
+.space-140{margin:0px;padding:5px}
+
+.anim-141{transition:all .3s ease}
+.anim-141:hover{transform:translateY(-2px) scale(1.01)}
+.space-141{margin:1px;padding:6px}
+
+.anim-142{transition:all .3s ease}
+.anim-142:hover{transform:translateY(-2px) scale(1.01)}
+.space-142{margin:2px;padding:7px}
+
+.anim-143{transition:all .3s ease}
+.anim-143:hover{transform:translateY(-2px) scale(1.01)}
+.space-143{margin:3px;padding:8px}
+
+.anim-144{transition:all .3s ease}
+.anim-144:hover{transform:translateY(-2px) scale(1.01)}
+.space-144{margin:4px;padding:9px}
+
+.anim-145{transition:all .3s ease}
+.anim-145:hover{transform:translateY(-2px) scale(1.01)}
+.space-145{margin:5px;padding:10px}
+
+.anim-146{transition:all .3s ease}
+.anim-146:hover{transform:translateY(-2px) scale(1.01)}
+.space-146{margin:6px;padding:11px}
+
+.anim-147{transition:all .3s ease}
+.anim-147:hover{transform:translateY(-2px) scale(1.01)}
+.space-147{margin:7px;padding:12px}
+
+.anim-148{transition:all .3s ease}
+.anim-148:hover{transform:translateY(-2px) scale(1.01)}
+.space-148{margin:8px;padding:13px}
+
+.anim-149{transition:all .3s ease}
+.anim-149:hover{transform:translateY(-2px) scale(1.01)}
+.space-149{margin:9px;padding:14px}
+
+.anim-150{transition:all .3s ease}
+.anim-150:hover{transform:translateY(-2px) scale(1.01)}
+.space-150{margin:10px;padding:0px}
+
+.anim-151{transition:all .3s ease}
+.anim-151:hover{transform:translateY(-2px) scale(1.01)}
+.space-151{margin:11px;padding:1px}
+
+.anim-152{
